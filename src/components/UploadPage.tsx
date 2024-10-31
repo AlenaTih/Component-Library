@@ -26,9 +26,9 @@ function UploadPage() {
 
     return (
         <div className="upload-page">
-            <h2 className="upload-page-title">
+            <h4 className="upload-page-title">
                 Upload your file here
-            </h2>
+            </h4>
 
             <form className="form">
                 <label htmlFor="input-file">

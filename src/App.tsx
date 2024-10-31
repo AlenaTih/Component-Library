@@ -12,13 +12,15 @@ function App() {
   
   return (
     <div className="app-container">
-      <h1>Upload page</h1>
+      <h1>React components</h1>
+
+      <h2>Upload page</h2>
       <UploadPage />
 
       <h2>Button component</h2>
-      <Button>Upload</Button>
+      <Button>Click</Button>
 
-      <h2>Star conponent</h2>
+      <h2>Star component</h2>
       <Star onChange={(on: boolean) => {
         console.log(`Star is ${on ? "on" : "off"}`)
         }} />
@@ -46,13 +48,15 @@ function App() {
       </MenuNameSpace.Menu>
 
       <h2>Badge component</h2>
-      <Badge color="whitesmoke" shape="square">
-        Badge
-      </Badge>
-      
-      <Badge color="cornflowerblue" shape="square">
-        Badge
-      </Badge>
+      <div className="badge-container">
+        <Badge color="whitesmoke" shape="square">
+          Badge
+        </Badge>
+
+        <Badge color="cornflowerblue" shape="pill">
+          Badge
+        </Badge>
+      </div>
 
     </div>
   )
