@@ -1,4 +1,5 @@
 import UploadPage from "./components/UploadPage.tsx"
+import Button from "./components/Button/Button.tsx"
 import "./App.css"
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="app-container">
       <h1>Building App</h1>
       <UploadPage />
+      <Button>Upload</Button>
     </div>
   )
 }
