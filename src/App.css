@@ -4,6 +4,18 @@
 
 /* Typography and icons */
 
+.star {
+  color: whitesmoke;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+  user-select: none;
+}
+
+.star.filled {
+  color: cornflowerblue;
+}
 
 /* Layout */
 

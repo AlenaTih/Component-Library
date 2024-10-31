@@ -1,11 +1,12 @@
 import UploadPage from "./components/UploadPage.tsx"
 import Button from "./components/Button/Button.tsx"
+import Star from "./components/Star.tsx"
 import MenuNameSpace from "./components/Menu/MenuNameSpace.tsx"
 import "./App.css"
 
 function App() {
   const handleMenuToggle = (open: boolean) => {
-    console.log("Menu is", open ? "open" : "closed");
+    console.log(`Menu is ${open ? "open" : "closed"}`)
 }
   
   return (
@@ -16,8 +17,12 @@ function App() {
       <h2>Button component</h2>
       <Button>Upload</Button>
 
-      <h2>Menu component</h2>
+      <h2>Star conponent</h2>
+      <Star onChange={(on: boolean) => {
+        console.log(`Star is ${on ? "on" : "off"}`)
+        }} />
 
+      <h2>Menu component</h2>
       <MenuNameSpace.Menu onOpen={handleMenuToggle}>
         <MenuNameSpace.Button>
           Toggle Menu
