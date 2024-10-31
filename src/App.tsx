@@ -2,6 +2,7 @@ import UploadPage from "./components/UploadPage.tsx"
 import Button from "./components/Button/Button.tsx"
 import Star from "./components/Star.tsx"
 import MenuNameSpace from "./components/Menu/MenuNameSpace.tsx"
+import Badge from "./components/Badge/Badge.tsx"
 import "./App.css"
 
 function App() {
@@ -43,6 +44,16 @@ function App() {
           </MenuNameSpace.Item>
         </MenuNameSpace.Dropdown>
       </MenuNameSpace.Menu>
+
+      <h2>Badge component</h2>
+      <Badge color="whitesmoke" shape="square">
+        Badge
+      </Badge>
+      
+      <Badge color="cornflowerblue" shape="square">
+        Badge
+      </Badge>
+
     </div>
   )
 }

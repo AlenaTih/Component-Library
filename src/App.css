@@ -26,7 +26,7 @@
   height: 100vh;
   width: 100%;
   overflow-x: hidden; /* Prevents horizontal scrolling */
-  padding: 0;
+  padding: 2.5rem 0;
 }
 
 .upload-page {
@@ -58,6 +58,15 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
 }
 
 /* Buttons */
