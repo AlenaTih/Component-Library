@@ -1,8 +1,18 @@
 import { useContext } from "react"
-import { MenuContext } from "./Menu"
+import { MenuContext } from "./Menu.tsx"
 
-export default function MenuDropdown({ children }: { children: React.ReactNode }) {
-    const { open } = useContext(MenuContext)
+interface MenuDropdownProps {
+    children: React.ReactNode;
+}
+
+function MenuDropdown({ children }: MenuDropdownProps) {
+    const context = useContext(MenuContext)
+
+    if(!context) {
+        throw new Error("MenuDropdown should be used within a Menu")
+    }
+
+    const { open } = context
 
     return (
         <>
@@ -15,3 +25,5 @@ export default function MenuDropdown({ children }: { children: React.ReactNode }
         </>
     )
 }
+
+export default MenuDropdown

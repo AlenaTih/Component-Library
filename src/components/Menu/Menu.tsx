@@ -1,5 +1,5 @@
-import { createContext } from "react"
-import useToggle from "../../hooks/useToggle"
+import { createContext, ReactNode } from "react"
+import useToggle from "../../hooks/useToggle.tsx"
 
 interface MenuContextValue {
     open: boolean;
@@ -9,12 +9,12 @@ interface MenuContextValue {
 const MenuContext = createContext<MenuContextValue | null>(null)
 export { MenuContext }
 
-// export interface MenuProps {
-//     children: React.ReactNode;
-//     onOpen?: (open: boolean) => void;
-// }
+interface MenuProps {
+    children: ReactNode;
+    onOpen?: (open: boolean) => void;
+}
 
-export default function Menu({ children, onOpen }: any) {
+function Menu({ children, onOpen }: MenuProps) {
     const [open, toggleOpen] = useToggle({
         initialValue: true, 
         onToggle: onOpen
@@ -29,4 +29,4 @@ export default function Menu({ children, onOpen }: any) {
     )
 }
 
-
+export default Menu

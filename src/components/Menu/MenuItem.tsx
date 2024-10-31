@@ -1,6 +1,8 @@
-function MenuItem(
-    { children }: { children: React.ReactNode }
-) {
+interface MenuItemProps {
+    children: React.ReactNode;
+}
+
+function MenuItem({ children }: MenuItemProps) {
     return (
         <div className="menu-item">
             {children}

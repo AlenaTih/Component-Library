@@ -1,10 +1,11 @@
 import classnames from "classnames"
 
-export interface ButtonProps {
+interface ButtonProps {
     children: React.ReactNode;
     className?: string;
     size?: "small" | "medium" | "large";
     variant?: "primary" | "secondary" | "tertiary";
+    onClick?: () => void;
 }
 
 function Button({
