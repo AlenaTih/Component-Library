@@ -7,7 +7,7 @@ function Badge({
     let backgroundColor
     let borderRadius
 
-    // Text and background color
+    // Text color and background color
     if (color === "whitesmoke") {
         textColor = "gray"
         backgroundColor = "whitesmoke"
