@@ -6,6 +6,9 @@ import Badge from "./components/Badge/Badge.tsx"
 import Banner from "./components/Banner/Banner.tsx"
 import { BsCloudUploadFill } from "react-icons/bs"
 import Card from "./components/Card/Card.tsx"
+import TestimonialWithImage from "./components/Testimonial/TestimonialWithImage.tsx"
+import MayAndersons from "./assets/may-andersons.png"
+import TestimonialWithoutImage from "./components/Testimonial/TestimonialWithoutImage.tsx"
 import "./App.css"
 
 function App() {
@@ -20,15 +23,15 @@ function App() {
       <h2 className="component-title">Upload page</h2>
       <UploadPage />
 
-      <h2 className="component-title">Button component</h2>
+      <h2 className="component-title">Button</h2>
       <Button>Click</Button>
 
-      <h2 className="component-title">Star component</h2>
+      <h2 className="component-title">Star</h2>
       <Star onChange={(on: boolean) => {
         console.log(`Star is ${on ? "on" : "off"}`)
         }} />
 
-      <h2 className="component-title">Menu component</h2>
+      <h2 className="component-title">Menu</h2>
       <MenuNameSpace.Menu onOpen={handleMenuToggle}>
         <MenuNameSpace.Button>
           Toggle Menu
@@ -50,7 +53,7 @@ function App() {
         </MenuNameSpace.Dropdown>
       </MenuNameSpace.Menu>
 
-      <h2 className="component-title">Badge component</h2>
+      <h2 className="component-title">Badge</h2>
       <div className="badge-container">
         <Badge color="yellow" shape="square">
           Badge
@@ -61,7 +64,7 @@ function App() {
         </Badge>
       </div>
 
-      <h2 className="component-title">Banner component</h2>
+      <h2 className="component-title">Banner</h2>
       <div className="banner-container">
         <Banner
           title="Congratulations!"
@@ -133,6 +136,25 @@ function App() {
           title="Efficient Deployment"
           text="Deploy your app efficiently in a few clicks."
           icon={<BsCloudUploadFill className="card-icon" />}
+        />
+      </div>
+
+      <h2 className="component-title">Testimonial</h2>
+      <div className="testimonial-container">
+        <TestimonialWithImage
+          image={MayAndersons}
+          text="This is an awesome app."
+          name="May Andersons"
+          company="Workcation"
+          title="CTO"
+        />
+
+        <TestimonialWithoutImage
+          companyLogo={MayAndersons}
+          text="This is an awesome app."
+          name="May Andersons"
+          company="Workcation"
+          title="CTO"
         />
       </div>
 
