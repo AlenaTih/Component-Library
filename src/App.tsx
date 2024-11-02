@@ -9,6 +9,7 @@ import Card from "./components/Card/Card.tsx"
 import TestimonialWithImage from "./components/Testimonial/TestimonialWithImage.tsx"
 import MayAndersons from "./assets/may-andersons.png"
 import TestimonialWithoutImage from "./components/Testimonial/TestimonialWithoutImage.tsx"
+import Tooltip from "./components/Tooltip/Tooltip.tsx"
 import "./App.css"
 
 function App() {
@@ -155,6 +156,15 @@ function App() {
           name="May Andersons"
           company="Workcation"
           title="CTO"
+        />
+      </div>
+
+      <h2 className="component-title">Tooltip</h2>
+      <div className="tooltip-container">
+        <Tooltip
+          title="Archive notes"
+          text="Click to archive your note."
+          color="blue"
         />
       </div>
 
