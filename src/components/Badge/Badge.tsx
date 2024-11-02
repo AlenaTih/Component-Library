@@ -2,20 +2,54 @@ function Badge({
     color,
     children,
     shape,
-}: {color: string, children: React.ReactNode, shape: string}) {
+}: {
+    color: "gray" | "red" | "yellow" | "green" | "blue" | "indigo" | "purple" | "pink",
+    children: React.ReactNode,
+    shape: string
+}) {
     let textColor
     let backgroundColor
     let borderRadius
 
     // Text color and background color
-    if (color === "whitesmoke") {
-        textColor = "gray"
-        backgroundColor = "whitesmoke"
+    if (color === "gray") {
+        textColor = "#1F2937"
+        backgroundColor = "#F3F4F6"
     }
 
-    if (color === "cornflowerblue") {
-        textColor = "whitesmoke"
-        backgroundColor = "cornflowerblue"
+    if (color === "red") {
+        textColor = "#991B1B"
+        backgroundColor = "#FEE2E2"
+    }
+
+    if (color === "yellow") {
+        textColor = "#92400E"
+        backgroundColor = "#FEF3C7"
+    }
+
+    if (color === "green") {
+        textColor = "#065F46"
+        backgroundColor = "#D1FAE5"
+    }
+
+    if (color === "blue") {
+        textColor = "#1E40AF"
+        backgroundColor = "#DBEAFE"
+    }
+
+    if (color === "indigo") {
+        textColor = "#3730A3"
+        backgroundColor = "#E0E7FF"
+    }
+
+    if (color === "purple") {
+        textColor = "#5B21B6"
+        backgroundColor = "#EDE9FE"
+    }
+
+    if (color === "pink") {
+        textColor = "#9D174D"
+        backgroundColor = "#FCE7F3"
     }
 
     // Border radius
@@ -24,7 +58,7 @@ function Badge({
     }
 
     if (shape === "pill") {
-        borderRadius = "1rem"
+        borderRadius = "0.75rem"
     }
 
     const style = {

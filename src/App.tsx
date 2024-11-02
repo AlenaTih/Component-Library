@@ -52,11 +52,11 @@ function App() {
 
       <h2 className="component-title">Badge component</h2>
       <div className="badge-container">
-        <Badge color="whitesmoke" shape="square">
+        <Badge color="yellow" shape="square">
           Badge
         </Badge>
 
-        <Badge color="cornflowerblue" shape="pill">
+        <Badge color="blue" shape="pill">
           Badge
         </Badge>
       </div>
