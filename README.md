@@ -20,7 +20,7 @@ A library of awesome components.
 - CSS
 - JavaScript
 - TypeScript
-- Font Awesome CDN
+- React Icons (Bootstrap Icons)
 
 ## API
 

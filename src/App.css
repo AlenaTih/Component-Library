@@ -37,6 +37,10 @@
   color: #60A5FA;
 }
 
+.card-icon {
+  color: cornflowerblue;
+}
+
 /* Layout */
 
 .app-container {
@@ -81,7 +85,8 @@
 }
 
 .badge-container,
-.banner-container {
+.banner-container,
+.card-container {
   display: flex;
   flex-direction: column;
 }
@@ -102,6 +107,17 @@
   justify-content: center;
   padding: 1rem;
   margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  padding: 1rem;
+  margin-top: 1rem;
   border-radius: 0.5rem;
 }
 

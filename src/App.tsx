@@ -4,6 +4,8 @@ import Star from "./components/Star.tsx"
 import MenuNameSpace from "./components/Menu/MenuNameSpace.tsx"
 import Badge from "./components/Badge/Badge.tsx"
 import Banner from "./components/Banner/Banner.tsx"
+import { BsCloudUploadFill } from "react-icons/bs"
+import Card from "./components/Card/Card.tsx"
 import "./App.css"
 
 function App() {
@@ -118,6 +120,20 @@ function App() {
           Banner Neutral
         </Banner> */}
 
+      </div>
+
+      <h2 className="component-title">Card</h2>
+      <div className="card-container">
+        <Card
+          title="Easy Deployment"
+          text="Deploy your app efficiently in a few clicks."
+        />
+
+        <Card
+          title="Efficient Deployment"
+          text="Deploy your app efficiently in a few clicks."
+          icon={<BsCloudUploadFill className="card-icon" />}
+        />
       </div>
 
     </div>
