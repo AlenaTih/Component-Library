@@ -1,3 +1,4 @@
+import { createPortal } from "react-dom"
 import UploadPage from "./components/UploadPage.tsx"
 import Button from "./components/Button/Button.tsx"
 import Star from "./components/Star.tsx"
@@ -221,25 +222,37 @@ function App() {
 
       <h2 className="component-title">Toast</h2>
       <div className="toast-container">
-        <Toast
-          status="Success"
-          text="Your work has been saved"
-        />
+        {createPortal(
+          <Toast
+            status="Success"
+            text="Your work has been saved"
+          />,
+          document.body
+        )}
 
-        <Toast
-          status="Warning"
-          text="A network error was detected"
-        />
+        {createPortal(
+          <Toast
+            status="Warning"
+            text="A network error was detected"
+          />,
+          document.body
+        )}
 
-        <Toast
-          status="Error"
-          text="Please re-save your work again"
-        />
+        {createPortal(
+          <Toast
+            status="Error"
+            text="Please re-save your work again"
+          />,
+          document.body
+        )}
 
-        <Toast
-          status="Information"
-          text="Please read updated information"
-        />
+        {createPortal(
+          <Toast
+            status="Information"
+            text="Please read updated information"
+          />,
+          document.body
+        )}
       </div>
 
     </div>
