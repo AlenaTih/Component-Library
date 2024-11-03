@@ -165,7 +165,57 @@ function App() {
         <Tooltip
           title="Archive notes"
           text="Click to archive your note."
+          color="gray"
+          mode="dark"
+        />
+
+        <Tooltip
+          title="Archive notes"
+          text="Click to archive your note."
           color="blue"
+          mode="dark"
+        />
+
+        <Tooltip
+          title="Archive notes"
+          text="Click to archive your note."
+          color="pink"
+          mode="dark"
+        />
+
+        <Tooltip
+          title="Archive notes"
+          text="Click to archive your note."
+          color="green"
+          mode="dark"
+        />
+
+        <Tooltip
+          title="Archive notes"
+          text="Click to archive your note."
+          color="gray"
+          mode="light"
+        />
+
+        <Tooltip
+          title="Archive notes"
+          text="Click to archive your note."
+          color="blue"
+          mode="light"
+        />
+
+        <Tooltip
+          title="Archive notes"
+          text="Click to archive your note."
+          color="pink"
+          mode="light"
+        />
+
+        <Tooltip
+          title="Archive notes"
+          text="Click to archive your note."
+          color="green"
+          mode="light"
         />
       </div>
 
