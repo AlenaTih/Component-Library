@@ -78,7 +78,8 @@ function Tooltip({
 
     const toolTipStyle = {
         backgroundColor: backgroundColor,
-    }
+        "--tooltip-border-color": backgroundColor,
+    } as React.CSSProperties // Type assertion for inline CSS variables
 
     const titleStyle = {
         color: titleColor,

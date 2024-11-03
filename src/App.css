@@ -153,9 +153,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: var(--tooltip-text-color);
+  background-color: var(--tooltip-background-color);
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 0.5rem;
+  position: relative;
+}
+
+/* A triange arrow at the bottom of the tooltip */
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem; /* Adjust to place it closer or further from the tooltip */
+  left: 20%;
+  transform: translateX(-50%);
+  border-width: 0.5rem; /* Triangle size */
+  border-style: solid;
+  border-color: var(--tooltip-border-color) transparent transparent transparent;
 }
 
 .toast {
@@ -180,7 +195,6 @@
 .toast.warning {
   top: 2rem;
   right: 2rem;
-
 }
 
 .toast.error {
