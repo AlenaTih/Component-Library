@@ -88,7 +88,8 @@
 .banner-container,
 .card-container,
 .testimonial-container,
-.tooltip-container {
+.tooltip-container,
+.toast-container {
   display: flex;
   flex-direction: column;
 }
@@ -155,6 +156,41 @@
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 0.5rem;
+}
+
+.toast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  /* bottom: 2rem;
+  right: 2rem; */
+  z-index: 9999;
+}
+
+.toast.success {
+  top: 2rem;
+  left: 2rem;
+}
+
+.toast.warning {
+  top: 2rem;
+  right: 2rem;
+
+}
+
+.toast.error {
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.toast.information {
+  bottom: 2rem;
+  left: 2rem;
 }
 
 /* Buttons */

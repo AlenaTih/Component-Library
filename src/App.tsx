@@ -10,6 +10,7 @@ import TestimonialWithImage from "./components/Testimonial/TestimonialWithImage.
 import MayAndersons from "./assets/may-andersons.png"
 import TestimonialWithoutImage from "./components/Testimonial/TestimonialWithoutImage.tsx"
 import Tooltip from "./components/Tooltip/Tooltip.tsx"
+import Toast from "./components/Toast/Toast.tsx"
 import "./App.css"
 
 function App() {
@@ -165,6 +166,29 @@ function App() {
           title="Archive notes"
           text="Click to archive your note."
           color="blue"
+        />
+      </div>
+
+      <h2 className="component-title">Toast</h2>
+      <div className="toast-container">
+        <Toast
+          status="Success"
+          text="Your work has been saved"
+        />
+
+        <Toast
+          status="Warning"
+          text="A network error was detected"
+        />
+
+        <Toast
+          status="Error"
+          text="Please re-save your work again"
+        />
+
+        <Toast
+          status="Information"
+          text="Please read updated information"
         />
       </div>
 
