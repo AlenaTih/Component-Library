@@ -97,35 +97,6 @@ function App() {
           title="New information"
           status="neutral"
         />
-
-        {/* <Banner
-          title="Congratulations!"
-          text="This is awesome."
-          status="success">
-          Banner Success
-        </Banner>
-
-        <Banner
-          title="Attention"
-          text="Please focus."
-          status="warning">
-          Banner Warning
-        </Banner>
-
-        <Banner
-          title="There is a problem with your application"
-          text="Please fex it."
-          status="error">
-          Banner Error
-        </Banner>
-
-        <Banner
-          title="Update available"
-          text="You can update your application."
-          status="neutral">
-          Banner Neutral
-        </Banner> */}
-
       </div>
 
       <h2 className="component-title">Card</h2>

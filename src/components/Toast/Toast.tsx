@@ -6,9 +6,11 @@ import { BsInfoCircle } from "react-icons/bs"
 function Toast({
     status,
     text,
+    // children,
 }: {
     status: "Success" | "Warning" | "Error" | "Information",
     text: string,
+    // children: React.ReactNode
 }) {
     let titleColor
     let textColor
