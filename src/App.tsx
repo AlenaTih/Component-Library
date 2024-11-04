@@ -104,6 +104,7 @@ function App() {
         <Card
           title="Easy Deployment"
           text="Deploy your app efficiently in a few clicks."
+          iconColor="#1E40AF"
         />
 
         <Card
