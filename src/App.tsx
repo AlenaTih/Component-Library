@@ -133,7 +133,7 @@ function App() {
         />
       </div>
 
-      <h2 className="component-title">Tooltip</h2>
+      <h2 className="component-title tooltip-component-title">Tooltip</h2>
       <div className="tooltip-container">
         <Tooltip
           title="Archive notes"

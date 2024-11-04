@@ -8,6 +8,10 @@
   margin-top: 4.5rem;
 }
 
+.tooltip-component-title {
+  margin-bottom: 0;
+}
+
 .star {
   color: whitesmoke;
   height: 2rem;
@@ -37,9 +41,11 @@
   color: #60A5FA;
 }
 
-/* .card-icon {
-  color: cornflowerblue;
-} */
+.card-icon {
+  /* color: cornflowerblue; */
+  font-size: 2rem;
+  margin-top: -2rem;
+}
 
 /* Layout */
 
@@ -120,8 +126,12 @@
   justify-content: center;
   background-color: whitesmoke;
   padding: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-radius: 0.5rem;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(17, 24, 39, 0.1);
 }
 
 .testimonial-with-image {
@@ -132,7 +142,7 @@
   color: whitesmoke;
   background-color: #2545B8;
   padding: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-radius: 0.5rem;
 }
 
@@ -144,7 +154,7 @@
   color: #111827;
   background-color: whitesmoke;
   padding: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-radius: 0.5rem;
 }
 
@@ -156,7 +166,7 @@
   color: var(--tooltip-text-color);
   background-color: var(--tooltip-background-color);
   padding: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-radius: 0.5rem;
   position: relative;
 }
@@ -179,7 +189,6 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  margin-top: 1rem;
   border-radius: 0.5rem;
   position: absolute;
   z-index: 9999;
@@ -204,6 +213,19 @@
   bottom: 2rem;
   left: 2rem;
 }
+
+.badge:first-of-type,
+.banner:first-of-type,
+.card:first-of-type,
+.testimonial-with-image:first-of-type,
+.testimonial-without-image:first-of-type {
+  margin-top: 1rem;
+}
+
+/* .tooltip:first-of-type,
+.tootip:nth-of-type(2) {
+  margin-top: 1rem;
+} */
 
 /* Buttons */
 
@@ -244,7 +266,7 @@
   .tooltip-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    column-gap: 1rem;
   }
 
   /* Buttons */
