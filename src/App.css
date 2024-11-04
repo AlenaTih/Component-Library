@@ -165,10 +165,10 @@
 .tooltip::after {
   content: "";
   position: absolute;
-  bottom: -1rem; /* Adjust to place it closer or further from the tooltip */
+  bottom: -2rem; /* Adjust to place it closer or further from the tooltip */
   left: 20%;
   transform: translateX(-50%);
-  border-width: 0.5rem; /* Triangle size */
+  border-width: 1rem; /* Triangle size */
   border-style: solid;
   border-color: var(--tooltip-border-color) transparent transparent transparent;
 }

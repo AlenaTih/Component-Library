@@ -19,7 +19,7 @@ function Tooltip({
     let backgroundColor
     let iconColor
 
-    // Title, text, icon, and background color
+    // Title, text, icon, and background color based on color and mode
     if (color === "gray" && mode === "dark") {
         titleColor = "whitesmoke"
         textColor = "#C7C7C7"
