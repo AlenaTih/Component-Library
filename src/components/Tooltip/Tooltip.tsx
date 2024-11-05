@@ -1,5 +1,6 @@
-import { BsBookmark } from "react-icons/bs"
-import { BsX } from "react-icons/bs"
+import { useState } from "react"
+// import { createPortal } from "react-dom"
+import { BsBookmark, BsX } from "react-icons/bs"
 
 function Tooltip({
     title,
@@ -14,6 +15,12 @@ function Tooltip({
     mode: "light" | "dark",
     // children: React.ReactNode,
 }) {
+    const [isVisible, setIsVisible] = useState(false)
+
+    // function toggleVisibility() {
+    //     setIsVisible(prev => !prev)
+    // }
+
     let titleColor
     let textColor
     let backgroundColor
@@ -94,17 +101,28 @@ function Tooltip({
     }
 
     return (
-        <div className="tooltip" style={toolTipStyle}>
-            <span
-                className="tooltip-icon">
+        <div
+            className="tooltip-wrapper"
+            onMouseEnter={() => setIsVisible(true)}
+            onMouseLeave={() => () => setIsVisible(false)}
+            // onClick={toggleVisibility}
+        >
+            <span className="tooltip-icon">
                 <BsBookmark style={iconStyle} />
-                </span>
-            <h4 style={titleStyle}>{title}</h4>
-            <p style={textStyle}>{text}</p>
-            {/* {children} */}
-            <span className="close-tooltip-icon">
-                <BsX style={iconStyle} />
             </span>
+            {isVisible && (
+                <div className="tooltip" style={toolTipStyle}>
+                    <h4 style={titleStyle}>{title}</h4>
+                    <p style={textStyle}>{text}</p>
+                    {/* {children} */}
+                    <span
+                        className="close-tooltip-icon"
+                        onClick={() => setIsVisible(false)}
+                    >
+                        <BsX style={iconStyle} />
+                    </span>
+                </div>
+            )}
         </div>
     )
 }

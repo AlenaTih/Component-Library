@@ -47,6 +47,17 @@
   margin-top: -2rem;
 }
 
+.tootip-icon {
+  cursor: pointer;
+}
+
+.close-tooltip-icon {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  cursor: pointer;
+}
+
 /* Layout */
 
 .app-container {
@@ -158,6 +169,12 @@
   border-radius: 0.5rem;
 }
 
+.tooltip-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .tooltip {
   display: flex;
   flex-direction: column;
@@ -167,20 +184,38 @@
   background-color: var(--tooltip-background-color);
   padding: 1rem;
   margin-top: 2rem;
+  /* margin-top: 0.5rem; */ /* Reduced margin for better alignment */
   border-radius: 0.5rem;
-  position: relative;
+  position: absolute;
+  bottom: 100%; /* Show tooltip above the element */
+  left: 50%; /* Center tooltip horizontally */
+  transform: translate(-50%);
+  box-shadow: 0 4px 8px rgba(17, 24, 39, 0.1);
+  white-space: nowrap;
+  z-index: 10;
 }
 
 /* A triange arrow at the bottom of the tooltip */
 .tooltip::after {
   content: "";
   position: absolute;
-  bottom: -2rem; /* Adjust to place it closer or further from the tooltip */
-  left: 20%;
+  bottom: -2rem; /* Move closer or further from the tooltip */
+  left: 50%; /* Center horizontally */
   transform: translateX(-50%);
   border-width: 1rem; /* Triangle size */
   border-style: solid;
   border-color: var(--tooltip-border-color) transparent transparent transparent;
+}
+
+.tootip-icon {
+  cursor: pointer;
+}
+
+.close-tooltip-icon {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  cursor: pointer;
 }
 
 .toast {
