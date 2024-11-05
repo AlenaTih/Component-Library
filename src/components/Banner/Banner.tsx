@@ -19,7 +19,7 @@ function Banner({
     let backgroundColor
     let icon
 
-    // Text color and background color based on the status
+    // Title, text, background color, and icon based on the status
     if (status === "success") {
         titleColor = "#065F46"
         textColor = "#047857"

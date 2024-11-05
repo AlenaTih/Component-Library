@@ -18,7 +18,7 @@ function Tooltip({
     const [isVisible, setIsVisible] = useState(false)
 
     // function toggleVisibility() {
-    //     setIsVisible(prev => !prev)
+    //     setIsVisible((prev: boolean) => !prev)
     // }
 
     let titleColor
@@ -115,12 +115,12 @@ function Tooltip({
                     <h4 style={titleStyle}>{title}</h4>
                     <p style={textStyle}>{text}</p>
                     {/* {children} */}
-                    <span
-                        className="close-tooltip-icon"
+                    <button
+                        className="close-tooltip-button"
                         onClick={() => setIsVisible(false)}
                     >
                         <BsX style={iconStyle} />
-                    </span>
+                    </button>
                 </div>
             )}
         </div>

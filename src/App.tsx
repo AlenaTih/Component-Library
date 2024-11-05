@@ -1,3 +1,4 @@
+import { useState} from "react"
 import { createPortal } from "react-dom"
 import UploadPage from "./components/UploadPage.tsx"
 import Button from "./components/Button/Button.tsx"
@@ -15,9 +16,14 @@ import Toast from "./components/Toast/Toast.tsx"
 import "./App.css"
 
 function App() {
+  const [showSuccessToast, setShowSuccessToast] = useState(true)
+  const [showWarningToast, setShowWarningToast] = useState(true)
+  const [showErrorToast, setShowErrorToast] = useState(true)
+  const [showInfoToast, setShowInfoToast] = useState(true)
+
   const handleMenuToggle = (open: boolean) => {
     console.log(`Menu is ${open ? "open" : "closed"}`)
-}
+  }
   
   return (
     <div className="app-container">
@@ -194,34 +200,38 @@ function App() {
 
       <h2 className="component-title">Toast</h2>
       <div className="toast-container">
-        {createPortal(
+        {showSuccessToast && createPortal(
           <Toast
             status="Success"
             text="Your work has been saved"
+            onClose={() => setShowSuccessToast(false)}
           />,
           document.body
         )}
 
-        {createPortal(
+        {showWarningToast && createPortal(
           <Toast
             status="Warning"
             text="A network error was detected"
+            onClose={() => setShowWarningToast(false)}
           />,
           document.body
         )}
 
-        {createPortal(
+        {showErrorToast && createPortal(
           <Toast
             status="Error"
             text="Please re-save your work again"
+            onClose={() => setShowErrorToast(false)}
           />,
           document.body
         )}
 
-        {createPortal(
+        {showInfoToast && createPortal(
           <Toast
             status="Information"
             text="Please read updated information"
+            onClose={() => setShowInfoToast(false)}
           />,
           document.body
         )}

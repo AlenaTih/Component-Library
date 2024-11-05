@@ -51,13 +51,6 @@
   cursor: pointer;
 }
 
-.close-tooltip-icon {
-  position: absolute;
-  top: 0.25rem;
-  right: 0.25rem;
-  cursor: pointer;
-}
-
 /* Layout */
 
 .app-container {
@@ -190,7 +183,7 @@
   bottom: 100%; /* Show tooltip above the element */
   left: 50%; /* Center tooltip horizontally */
   transform: translate(-50%);
-  box-shadow: 0 4px 8px rgba(17, 24, 39, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(17, 24, 39, 0.1);
   white-space: nowrap;
   z-index: 10;
 }
@@ -227,6 +220,20 @@
   border-radius: 0.5rem;
   position: absolute;
   z-index: 9999;
+  transition: all 1s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: 0 4px 8px 0 rgba(17, 24, 39, 0.1);
+}
+
+.toast-enter {
+  opacity: 1;
+  transform: translateY(-1.25rem);
+}
+
+.toast-exit {
+  opacity: 0;
+  transform: translateY(1.25rem);
 }
 
 .toast.success {
@@ -264,6 +271,19 @@
 
 /* Buttons */
 
+.close-tooltip-button {
+  font-size: 1.25rem;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  cursor: pointer;
+}
+
+.close-toast-button {
+  cursor: pointer;
+}
 
 /* Images */
 
