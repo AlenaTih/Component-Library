@@ -8,8 +8,8 @@
   margin-top: 4.5rem;
 }
 
-.tooltip-component-title {
-  margin-bottom: 0;
+.upload-page-title {
+  margin-top: 0;
 }
 
 .star {
@@ -45,10 +45,6 @@
   /* color: cornflowerblue; */
   font-size: 2rem;
   margin-top: -2rem;
-}
-
-.tootip-icon {
-  cursor: pointer;
 }
 
 /* Layout */
@@ -264,12 +260,14 @@
   margin-top: 1rem;
 }
 
-/* .tooltip:first-of-type,
-.tootip:nth-of-type(2) {
-  margin-top: 1rem;
-} */
-
 /* Buttons */
+
+.open-tooltip-button {
+  font-size: 1.25rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 
 .close-tooltip-button {
   font-size: 1.25rem;

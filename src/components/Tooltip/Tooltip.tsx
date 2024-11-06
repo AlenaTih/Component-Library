@@ -105,11 +105,13 @@ function Tooltip({
             className="tooltip-wrapper"
             onMouseEnter={() => setIsVisible(true)}
             onMouseLeave={() => setIsVisible(false)}
+            onTouchStart={() => setIsVisible(true)}
+            // onTouchEnd={() => setIsVisible(false)}
             // onClick={toggleVisibility}
         >
-            <span className="tooltip-icon">
+            <button className="open-tooltip-button">
                 <BsBookmark style={iconStyle} />
-            </span>
+            </button>
             {isVisible && (
                 <div className="tooltip" style={toolTipStyle}>
                     <h4 style={titleStyle}>{title}</h4>
@@ -118,6 +120,7 @@ function Tooltip({
                     <button
                         className="close-tooltip-button"
                         onClick={() => setIsVisible(false)}
+                        aria-label="Close tootip"
                     >
                         <BsX style={iconStyle} />
                     </button>

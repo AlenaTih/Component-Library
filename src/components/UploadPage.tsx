@@ -49,16 +49,18 @@ function UploadPage() {
                 </button>
             </form>
 
-            <div className="uploaded-file-container">
-                <h4
-                    className="uploaded-file-name">
-                    {formData.fileName}
-                </h4>
-                <img
-                    className="uploaded-image"
-                    src={formData.imageUrl}
-                />
-            </div>
+            {formData.imageUrl && (
+                <div className="uploaded-file-container">
+                    <h4
+                        className="uploaded-file-name">
+                        {formData.fileName}
+                    </h4>
+                    <img
+                        className="uploaded-image"
+                        src={formData.imageUrl}
+                    />
+                </div>
+            )}
         </div>
     )
 }
