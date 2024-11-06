@@ -16,10 +16,17 @@ import Toast from "./components/Toast/Toast.tsx"
 import "./App.css"
 
 function App() {
-  const [showSuccessToast, setShowSuccessToast] = useState(true)
-  const [showWarningToast, setShowWarningToast] = useState(true)
-  const [showErrorToast, setShowErrorToast] = useState(true)
-  const [showInfoToast, setShowInfoToast] = useState(true)
+  const [isSuccessToastShown, setIsSuccessToastShown] = useState(true)
+  const [isWarningToastShown, setIsWarningToastShown] = useState(true)
+  const [isErrorToastShown, setIsErrorToastShown] = useState(true)
+  const [isInfoToastShown, setIsInfoToastShown] = useState(true)
+
+  function showToasts() {
+    setIsSuccessToastShown(true)
+    setIsWarningToastShown(true)
+    setIsErrorToastShown(true)
+    setIsInfoToastShown(true)
+  }
 
   const handleMenuToggle = (open: boolean) => {
     console.log(`Menu is ${open ? "open" : "closed"}`)
@@ -200,41 +207,47 @@ function App() {
 
       <h2 className="component-title">Toast</h2>
       <div className="toast-container">
-        {showSuccessToast && createPortal(
+        {isSuccessToastShown && createPortal(
           <Toast
             status="Success"
             text="Your work has been saved"
-            onClose={() => setShowSuccessToast(false)}
+            onClose={() => setIsSuccessToastShown(false)}
           />,
           document.body
         )}
 
-        {showWarningToast && createPortal(
+        {isWarningToastShown && createPortal(
           <Toast
             status="Warning"
             text="A network error was detected"
-            onClose={() => setShowWarningToast(false)}
+            onClose={() => setIsWarningToastShown(false)}
           />,
           document.body
         )}
 
-        {showErrorToast && createPortal(
+        {isErrorToastShown && createPortal(
           <Toast
             status="Error"
             text="Please re-save your work again"
-            onClose={() => setShowErrorToast(false)}
+            onClose={() => setIsErrorToastShown(false)}
           />,
           document.body
         )}
 
-        {showInfoToast && createPortal(
+        {isInfoToastShown && createPortal(
           <Toast
             status="Information"
             text="Please read updated information"
-            onClose={() => setShowInfoToast(false)}
+            onClose={() => setIsInfoToastShown(false)}
           />,
           document.body
         )}
+
+        <button
+          className="show-toast-button"
+          onClick={showToasts}>
+            Show toasts
+        </button>
       </div>
 
     </div>
