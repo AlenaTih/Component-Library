@@ -16,7 +16,11 @@ function MenuButton({ children }: MenuButtonProps) {
     const { toggleOpen } = context
 
     return (
-        <Button onClick={toggleOpen}>{children}</Button>
+        <Button
+            className="menu-button"
+            onClick={toggleOpen}>
+            {children}
+        </Button>
     )
 }
 

@@ -1,6 +1,6 @@
 import { useState} from "react"
 import { createPortal } from "react-dom"
-import UploadPage from "./components/UploadPage.tsx"
+// import UploadPage from "./components/UploadPage.tsx"
 import Button from "./components/Button/Button.tsx"
 import Star from "./components/Star.tsx"
 import MenuNameSpace from "./components/Menu/MenuNameSpace.tsx"
@@ -36,11 +36,11 @@ function App() {
     <div className="app-container">
       <h1>React components</h1>
 
-      <h2 className="component-title">Upload page</h2>
-      <UploadPage />
+      {/* <h2 className="component-title">Upload page</h2>
+      <UploadPage /> */}
 
       <h2 className="component-title">Button</h2>
-      <Button>Click</Button>
+      <Button className="do-this-button">Click</Button>
 
       <h2 className="component-title">Star</h2>
       <Star onChange={(on: boolean) => {

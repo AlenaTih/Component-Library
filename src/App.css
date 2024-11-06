@@ -262,6 +262,14 @@
 
 /* Buttons */
 
+.do-this-button {
+  cursor: pointer;
+}
+
+.menu-button {
+  cursor: pointer;
+}
+
 .open-tooltip-button {
   font-size: 1.25rem;
   background-color: transparent;
