@@ -40,7 +40,12 @@ function App() {
       <UploadPage /> */}
 
       <h2 className="component-title">Button</h2>
-      <Button className="do-this-button">Click</Button>
+      <Button
+        className="do-this-button"
+        onClick={() => console.log("Button clicked")}
+      >
+        Click
+      </Button>
 
       <h2 className="component-title">Star</h2>
       <Star onChange={(on: boolean) => {
