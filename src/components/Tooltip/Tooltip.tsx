@@ -104,7 +104,7 @@ function Tooltip({
         <div
             className="tooltip-wrapper"
             onMouseEnter={() => setIsVisible(true)}
-            onMouseLeave={() => () => setIsVisible(false)}
+            onMouseLeave={() => setIsVisible(false)}
             // onClick={toggleVisibility}
         >
             <span className="tooltip-icon">
