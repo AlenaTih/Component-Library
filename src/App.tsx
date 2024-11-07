@@ -125,7 +125,7 @@ function App() {
 
         <Banner
           title="There is a problem with your application"
-          text="Please fex it."
+          text="Please fix it."
           status="error"
         />
 

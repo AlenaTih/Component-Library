@@ -5,13 +5,13 @@ function Badge({
 }: {
     color: "gray" | "red" | "yellow" | "green" | "blue" | "indigo" | "purple" | "pink",
     children: React.ReactNode,
-    shape: string
+    shape: "square" | "pill",
 }) {
     let textColor
     let backgroundColor
     let borderRadius
 
-    // Text color and background color
+    // Text color and background color based on color
     if (color === "gray") {
         textColor = "#1F2937"
         // backgroundColor = "#F3F4F6"
@@ -53,7 +53,7 @@ function Badge({
         backgroundColor = "#FCE7F3"
     }
 
-    // Border radius
+    // Border radius based on shape
     if (shape === "square") {
         borderRadius = "0.25rem"
     }

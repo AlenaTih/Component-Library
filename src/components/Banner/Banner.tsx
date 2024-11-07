@@ -62,11 +62,15 @@ function Banner({
 
     return (
         <div className="banner" style={bannerStyle}>
-            <span className="banner-icon">{icon}</span>
-            <h4 className="banner-title" style={titleStyle}>{title}</h4>
-            {text && (
-                <p className="banner-text" style={textStyle}>{text}</p>
-            )}
+            <div className="banner-icon-container">
+                <span className="banner-icon">{icon}</span>
+            </div>
+            <div className="banner-text-container">
+                <h4 className="banner-title" style={titleStyle}>{title}</h4>
+                {text && (
+                    <p className="banner-text" style={textStyle}>{text}</p>
+                )}
+            </div>
             {/* {children} */}
         </div>
     )

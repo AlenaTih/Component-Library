@@ -25,6 +25,18 @@
   color: #FBBF24;
 }
 
+.banner-title {
+  margin: 0;
+}
+
+.banner-text {
+  margin: 0.75rem 0 0;
+}
+
+.banner-icon {
+  font-size: 1rem;
+}
+
 .success-icon {
   color: #34D399;
 }
@@ -150,12 +162,23 @@
 
 .banner {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 1rem;
+  justify-content: flex-start;
+  padding: 2rem;
   margin-top: 2rem;
   border-radius: 0.5rem;
+}
+
+.banner-icon-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 2rem;
 }
 
 .card {
