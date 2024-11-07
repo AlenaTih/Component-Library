@@ -53,10 +53,20 @@
   color: #60A5FA;
 }
 
+.card-title {
+  color: #111827;
+  margin: 1.5rem 0 0;
+}
+
+.card-text {
+  color: #6B7280;
+  margin: 1.25rem 0 0;
+}
+
 .card-icon {
-  /* color: cornflowerblue; */
+  /* color: cornflowerblue; */ 
   font-size: 2rem;
-  margin-top: -2rem;
+  margin-top: -3.5rem;
 }
 
 /* Layout */
@@ -187,7 +197,7 @@
   align-items: center;
   justify-content: center;
   background-color: #CFD9FA;
-  padding: 1rem;
+  padding: 2.5rem;
   margin-top: 2rem;
   border-radius: 0.5rem;
 }

@@ -19,13 +19,13 @@ function Card({
 
     return (
         <div className="card">
-            <span
-                className="card-icon"
-                style={iconStyle}>
-                {icon}
-            </span>
-            <h4>{title}</h4>
-            <p>{text}</p>
+                <span
+                    className="card-icon"
+                    style={iconStyle}>
+                    {icon}
+                </span>
+            <h4 className="card-title">{title}</h4>
+            <p className="card-text">{text}</p>
             {/* {children} */}
         </div>
     )
