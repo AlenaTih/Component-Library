@@ -77,6 +77,10 @@
   margin: 0 0.5rem 0 0;
 }
 
+.testimonial-slash {
+  color: cornflowerblue;
+}
+
 .tooltip-title {
   margin: 0;
 }
@@ -282,6 +286,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  cursor: pointer;
 }
 
 .tooltip {
@@ -501,6 +506,10 @@
 
 
   /* Layout */
+
+  .app-container {
+    padding: 2.5rem 1rem 7.5rem;
+  }
 
   .uploaded-file-container {
     width: 60%;

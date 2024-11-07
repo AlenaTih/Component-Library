@@ -21,8 +21,10 @@ function TestimonialWithoutImage({
                 alt={`The logo of ${company}`} />
             <p className=" testimonial-text">{text}</p>
             <div className="testimonial-name-company-title-container">
-                <p className="testimonial-name">{name}</p>
-                <p className="testimonial-company-title">{`${company}, ${title}`}</p>
+                <p className="testimonial-name">{name}
+                    <span className="testimonial-slash"> /</span>
+                </p>
+                <p className="testimonial-company-title">{`${ company}, ${title}`}</p>
             </div>
             {/* {children} */}
         </div>
