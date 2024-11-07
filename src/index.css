@@ -11,6 +11,9 @@
   /* color: rgba(255, 255, 255, 0.87);
   background-color: #242424; */
 
+  color: #2A303C;
+  background-color: whitesmoke;
+
   /* Dark mode */
   --text-color-light: rgba(255, 255, 255, 0.87);
   --background-color-dark: #242424;

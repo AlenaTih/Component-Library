@@ -55,7 +55,7 @@ function App() {
       <h2 className="component-title">Menu</h2>
       <MenuNameSpace.Menu onOpen={handleMenuToggle}>
         <MenuNameSpace.Button>
-          Toggle Menu
+          Toggle menu
         </MenuNameSpace.Button>
                 
         <MenuNameSpace.Dropdown>

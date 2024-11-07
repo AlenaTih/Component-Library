@@ -6,7 +6,18 @@ A library of awesome components.
 
 ## Features
 
+Components included:
+
 - **Feature:** description.
+- **Button**
+- **Star**
+- **Menu**
+- **Badge**
+- **Banner**
+- **Card**
+- **Testimonial**
+- **Tooltip**
+- **Toast**
 
 ## Usage
 
