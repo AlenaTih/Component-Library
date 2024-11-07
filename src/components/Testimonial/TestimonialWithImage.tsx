@@ -15,13 +15,17 @@ function TestimonialWithImage({
 }) {
     return (
         <div className="testimonial-with-image">
-            <img
-                className="testimonial-image"
-                src={image}
-                alt={`An image of ${name}`} />
-            <p>{text}</p>
-            <p>{name}</p>
-            <p>{`${company}, ${title}`}</p>
+            <div className="testimonial-image-container">
+                <img
+                    className="testimonial-image"
+                    src={image}
+                    alt={`An image of ${name}`} />
+            </div>
+            <div className="testimonial-text-container">
+                <p className="testimonial-text">{text}</p>
+                <p className="testimonial-name">{name}</p>
+                <p className="testimonial-company-title">{`${company}, ${title}`}</p>
+            </div>
             {/* {children} */}
         </div>
     )

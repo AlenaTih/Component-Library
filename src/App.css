@@ -69,6 +69,14 @@
   margin-top: -3.5rem;
 }
 
+.testimonial-company-title {
+  margin: 0;
+}
+
+.testimonial-without-image .testimonial-name {
+  margin: 0 0.5rem 0 0;
+}
+
 /* Layout */
 
 .app-container {
@@ -208,14 +216,29 @@
 
 .testimonial-with-image {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   color: whitesmoke;
   background-color: #2545B8;
-  padding: 1rem;
+  padding: 2.5rem;
   margin-top: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.testimonial-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding: 0;
+  margin: 0;
+}
+
+.testimonial-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 1rem;
 }
 
 .testimonial-without-image {
@@ -225,9 +248,14 @@
   justify-content: center;
   color: #111827;
   background-color: #FEF3C7;
-  padding: 1rem;
+  padding: 4.5rem 2.5rem;
   margin-top: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.testimonial-name-company-title-container {
+  display: flex;
+  align-items: center;
 }
 
 .tooltip-wrapper {
@@ -419,12 +447,15 @@
 
 .testimonial-image {
   width: 100%;
-  border-radius: 0.5rem;
+  padding: 0;
+  margin: 0;
+  border-radius: 0.75rem;
 }
 
 .company-logo-image {
-  width: 40%;
-  border-radius: 0.5rem;
+  width: 20%;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
 }
 
 /* Links */
@@ -458,9 +489,9 @@
 
   /* Images */
 
-  .testimonial-image {
+  /* .testimonial-image {
     width: 60%;
-  }
+  } */
 
   /* Links */
 
