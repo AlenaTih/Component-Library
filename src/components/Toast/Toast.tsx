@@ -89,19 +89,27 @@ function Toast({
     }, [duration, onClose])
 
     return (
-        <div className={`toast ${className} ${isVisible ? "toast-enter" : "toast-exit"}`} style={toastStyle}>
-            <span className="toast-icon">{icon}</span>
-            <h4 style={statusStyle}>{status}</h4>
-            <p style={textStyle}>{text}</p>
-            <button
-                className="close-toast-button"
-                onClick={() => {
-                    if (onClose) onClose()
-                    setIsVisible(false)
-                }}
-            >
-                <BsX />
-            </button>
+        <div
+            className={`toast ${className} ${isVisible ? "toast-enter" : "toast-exit"}`}
+            style={toastStyle}>
+            <div className="toast-icon-container">
+                <span className="toast-icon">{icon}</span>
+            </div>
+            <div className="toast-text-container">
+                <h4 className="toast-title" style={statusStyle}>{status}</h4>
+                <p className="toast-text" style={textStyle}>{text}</p>
+            </div>
+            <div className="toast-close-button-container">
+                <button
+                    className="close-toast-button"
+                    onClick={() => {
+                        if (onClose) onClose()
+                        setIsVisible(false)
+                    }}
+                >
+                    <BsX />
+                </button>
+            </div>
         </div>
     )
 }
