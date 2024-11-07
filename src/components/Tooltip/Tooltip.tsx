@@ -114,16 +114,23 @@ function Tooltip({
             </button>
             {isVisible && (
                 <div className="tooltip" style={toolTipStyle}>
-                    <h4 style={titleStyle}>{title}</h4>
-                    <p style={textStyle}>{text}</p>
+                    <div className="tooltip-icon-container">
+                        <BsBookmark style={iconStyle} />
+                    </div>
+                    <div className="tooltip-text-container">
+                        <h4 className="tooltip-title" style={titleStyle}>{title}</h4>
+                        <p className="tooltip-text" style={textStyle}>{text}</p>
+                    </div>
                     {/* {children} */}
-                    <button
-                        className="close-tooltip-button"
-                        onClick={() => setIsVisible(false)}
-                        aria-label="Close tootip"
-                    >
-                        <BsX style={iconStyle} />
-                    </button>
+                    <div className="tooltip-button-container">
+                        <button
+                            className="close-tooltip-button"
+                            onClick={() => setIsVisible(false)}
+                            aria-label="Close tooltip"
+                        >
+                            <BsX style={iconStyle} />
+                        </button>
+                    </div>
                 </div>
             )}
         </div>
