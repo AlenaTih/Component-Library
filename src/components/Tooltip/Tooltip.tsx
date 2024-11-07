@@ -58,7 +58,7 @@ function Tooltip({
     if (color === "gray" && mode === "light") {
         titleColor = "#111827"
         textColor = "#6B7280"
-        backgroundColor = "whitesmoke"
+        backgroundColor = "#FBF4EA"
         iconColor = "#6B7280"
     }
 

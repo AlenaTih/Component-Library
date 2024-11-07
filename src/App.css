@@ -102,7 +102,7 @@
 
 .badge-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
@@ -123,14 +123,15 @@
 }
 
 .menu-item {
+  background-color: #FFFBEB;
   font-size: 1rem;
   width: 100%;
   padding: 0.5rem;
   margin-top: 0.5rem;
   border-radius: 0.5rem;
-  border: 1px solid cornflowerblue;
+  /* border: 1px solid cornflowerblue; */
   cursor: pointer;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .menu-item:hover {
@@ -162,7 +163,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: whitesmoke;
+  background-color: #CFD9FA;
   padding: 1rem;
   margin-top: 2rem;
   border-radius: 0.5rem;
@@ -407,6 +408,10 @@
 
   .uploaded-file-container {
     width: 60%;
+  }
+
+  .badge-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .tooltip-container {
