@@ -100,6 +100,12 @@
   flex-direction: column;
 }
 
+.badge-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -184,7 +190,7 @@
   align-items: center;
   justify-content: center;
   color: #111827;
-  background-color: whitesmoke;
+  background-color: #FEF3C7;
   padding: 1rem;
   margin-top: 2rem;
   border-radius: 0.5rem;
@@ -303,8 +309,8 @@
   background-color: #2E5CB5;
   font-size: 1.125rem;
   padding: 0.75rem 1.25rem;
-  border-radius: 0.5rem;
   border: none;
+  border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   box-shadow: 0 4px 8px 0 rgba(17, 24, 39, 0.1);
@@ -319,8 +325,8 @@
   background-color: #2E5CB5;
   font-size: 1.125rem;
   padding: 0.75rem 1rem;
-  border-radius: 0.5rem;
   border: none;
+  border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   box-shadow: 0 4px 8px 0 rgba(17, 24, 39, 0.1);
@@ -331,15 +337,15 @@
 }
 
 .open-tooltip-button {
-  font-size: 1.25rem;
   background-color: transparent;
+  font-size: 1.25rem;
   border: none;
   cursor: pointer;
 }
 
 .close-tooltip-button {
-  font-size: 1.25rem;
   background-color: transparent;
+  font-size: 1.25rem;
   border: none;
   position: absolute;
   top: 0.25rem;
@@ -348,10 +354,25 @@
 }
 
 .show-toast-button {
+  color: whitesmoke;
+  background-color: #2E5CB5;
+  font-size: 1.125rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(17, 24, 39, 0.1);
   cursor: pointer;
 }
 
+.show-toast-button:hover {
+  background-color: #3B7BF8;
+}
+
 .close-toast-button {
+  background-color: transparent;
+  font-size: 1.25rem;
+  border: none;
   cursor: pointer;
 }
 

@@ -14,7 +14,8 @@ function Badge({
     // Text color and background color
     if (color === "gray") {
         textColor = "#1F2937"
-        backgroundColor = "#F3F4F6"
+        // backgroundColor = "#F3F4F6"
+        backgroundColor = "#D8D9DC"
     }
 
     if (color === "red") {

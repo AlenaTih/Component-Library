@@ -80,7 +80,31 @@ function App() {
           Badge
         </Badge>
 
+        <Badge color="gray" shape="pill">
+          Badge
+        </Badge>
+
+        <Badge color="red" shape="square">
+          Badge
+        </Badge>
+
         <Badge color="blue" shape="pill">
+          Badge
+        </Badge>
+
+        <Badge color="green" shape="square">
+          Badge
+        </Badge>
+
+        <Badge color="indigo" shape="pill">
+          Badge
+        </Badge>
+
+        <Badge color="purple" shape="square">
+          Badge
+        </Badge>
+
+        <Badge color="pink" shape="pill">
           Badge
         </Badge>
       </div>
