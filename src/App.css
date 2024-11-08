@@ -4,9 +4,9 @@
 
 /* Typography and icons */
 
-.component-title:not(:first-of-type) {
+/* .component-title:not(:first-of-type) {
   margin-top: 4.5rem;
-}
+} */
 
 .upload-page-title {
   margin-top: 0;
@@ -111,6 +111,17 @@
   width: 100%;
   overflow-x: hidden; /* Prevents horizontal scrolling */
   padding: 2.5rem 1rem 4.5rem;
+}
+
+.component-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.component-container:not(:first-of-type) {
+  margin-top: 4.5rem;
 }
 
 .upload-page {
