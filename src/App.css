@@ -479,6 +479,10 @@
   background-color: #3B7BF8;
 }
 
+.show-toast-button:disabled {
+  background-color: cornflowerblue;
+}
+
 .close-toast-button {
   background-color: transparent;
   font-size: 1.5rem;

@@ -291,7 +291,13 @@ function App() {
 
           <button
             className="show-toast-button"
-            onClick={showToasts}>
+            onClick={showToasts}
+            aria-label="Show toasts"
+            disabled={
+              isSuccessToastShown || isWarningToastShown ||
+              isErrorToastShown || isInfoToastShown
+            }
+          >
               Show toasts
           </button>
         </div>
