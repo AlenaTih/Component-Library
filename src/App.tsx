@@ -10,6 +10,7 @@ import { BsCloudUploadFill } from "react-icons/bs"
 import Card from "./components/Card/Card.tsx"
 import TestimonialWithImage from "./components/Testimonial/TestimonialWithImage.tsx"
 import MayAndersons from "./assets/may-andersons.png"
+import WorkcationLogo from "./assets/workcation-logo.png"
 import TestimonialWithoutImage from "./components/Testimonial/TestimonialWithoutImage.tsx"
 import Tooltip from "./components/Tooltip/Tooltip.tsx"
 import Toast from "./components/Toast/Toast.tsx"
@@ -180,7 +181,7 @@ function App() {
           />
 
           <TestimonialWithoutImage
-            companyLogo={MayAndersons}
+            companyLogo={WorkcationLogo}
             text="This is an awesome app."
             name="May Andersons"
             company="Workcation"

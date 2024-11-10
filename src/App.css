@@ -69,8 +69,20 @@
   margin-top: -3.5rem;
 }
 
+.testimonial-text {
+  font-size: 1.25rem;
+}
+
 .testimonial-company-title {
   margin: 0;
+}
+
+.testimonial-name {
+  font-weight: 700;
+}
+
+.testimonial-with-image .testimonial-name {
+  margin-bottom: 0.5rem;
 }
 
 .testimonial-without-image .testimonial-name {
@@ -79,6 +91,7 @@
 
 .testimonial-slash {
   color: cornflowerblue;
+  margin: 0 0.5rem 0 0;
 }
 
 .tooltip-title {
@@ -220,6 +233,7 @@
   padding: 2rem;
   margin-top: 2rem;
   border-radius: 0.5rem;
+  box-shadow: 0 4px 8px 0 rgba(17, 24, 39, 0.1);
 }
 
 .banner-icon-container {
@@ -240,7 +254,7 @@
   align-items: center;
   justify-content: center;
   background-color: #CFD9FA;
-  padding: 2.5rem;
+  padding: 2.5rem 2.5rem 3rem;
   margin-top: 2rem;
   border-radius: 0.5rem;
 }
@@ -251,20 +265,22 @@
 
 .testimonial-with-image {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   color: whitesmoke;
   background-color: #2545B8;
-  padding: 2.5rem;
+  padding: 3rem 2rem 4.5rem;
   margin-top: 2rem;
   border-radius: 0.75rem;
+  box-shadow: 0 4px 8px 0 rgba(17, 24, 39, 0.1);
 }
 
 .testimonial-image-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -272,8 +288,9 @@
 .testimonial-text-container {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   width: 100%;
-  margin-left: 1rem;
+  margin-top: 2rem;
 }
 
 .testimonial-without-image {
@@ -283,9 +300,10 @@
   justify-content: center;
   color: #111827;
   background-color: #FEF3C7;
-  padding: 4.5rem 2.5rem;
+  padding: 4.5rem 2rem;
   margin-top: 2rem;
   border-radius: 0.75rem;
+  box-shadow: 0 4px 8px 0 rgba(17, 24, 39, 0.1);
 }
 
 .testimonial-name-company-title-container {
@@ -505,9 +523,9 @@
 }
 
 .company-logo-image {
-  width: 20%;
+  width: 60%;
   margin-bottom: 1rem;
-  border-radius: 0.75rem;
+  /* border-radius: 0.75rem; */
 }
 
 /* Links */
@@ -540,6 +558,15 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
+  .testimonial-with-image {
+    flex-direction: row;
+    padding: 2.5rem;
+  }
+
+  .testimonial-text-container {
+    margin-left: 2rem;
+  }
+
   .tooltip-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -551,9 +578,9 @@
 
   /* Images */
 
-  /* .testimonial-image {
-    width: 60%;
-  } */
+  .company-logo-image {
+    width: 20%;
+  }
 
   /* Links */
 
