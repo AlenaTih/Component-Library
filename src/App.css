@@ -64,7 +64,6 @@
 }
 
 .card-icon {
-  /* color: cornflowerblue; */ 
   font-size: 2rem;
   margin-top: -3.5rem;
 }
@@ -73,14 +72,6 @@
   font-size: 1.25rem;
   margin-bottom: 2rem;
 }
-
-/* .testimonial-with-image .testimonial-text {
-  margin-bottom: 1.5rem;
-} */
-
-/* .testimonial-without-image .testimonial-text {
-  margin-bottom: 2rem;
-} */
 
 .testimonial-company-title {
   margin: 0;
@@ -185,6 +176,9 @@
 .toast-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .badge-container {
@@ -239,6 +233,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  width: 100%;
   padding: 2rem;
   margin-top: 2rem;
   border-radius: 0.5rem;
@@ -279,6 +274,7 @@
   justify-content: center;
   color: whitesmoke;
   background-color: #2545B8;
+  width: 100%;
   padding: 3rem 2rem 4.5rem;
   margin-top: 2rem;
   border-radius: 0.75rem;
@@ -309,6 +305,7 @@
   justify-content: center;
   color: #111827;
   background-color: #FEF3C7;
+  width: 100%;
   padding: 4.5rem 2rem;
   margin-top: 2rem;
   border-radius: 0.75rem;
@@ -563,12 +560,20 @@
 
   .app-container {
     /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-    padding: 2.5rem 1rem 7.5rem;
+    justify-content: flex-start;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.5rem;
+    row-gap: 4.5rem; */
+    padding: 2.5rem 4.5rem 7.5rem;
   }
 
   /* .component-container {
-    width: 50%;
+    border: 1px solid cornflowerblue;
+    margin: 0;
+  } */
+
+  /* .component-container:not(:first-of-type) {
+    margin-top: 0;
   } */
 
   .uploaded-file-container {
