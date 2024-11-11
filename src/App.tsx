@@ -35,7 +35,7 @@ function App() {
   
   return (
     <div className="app-container">
-      <h1>React components</h1>
+      <h1 className="app-title">React Components</h1>
 
       {/* <h2 className="component-title">Upload page</h2>
       <UploadPage /> */}

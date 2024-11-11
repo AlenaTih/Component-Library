@@ -4,6 +4,20 @@
 
 /* Typography and icons */
 
+.app-title {
+  color: #143982;
+  /* animation: title-animation 1s ease-in-out; */
+}
+
+/* @keyframes title-animation {
+  0% {
+    color: cornflowerblue;
+  }
+  100% {
+    color: #143982;
+  }
+} */
+
 .component-title {
   margin-bottom: 2rem;
 }
