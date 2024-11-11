@@ -6,17 +6,7 @@
 
 .app-title {
   color: #143982;
-  /* animation: title-animation 1s ease-in-out; */
 }
-
-/* @keyframes title-animation {
-  0% {
-    color: cornflowerblue;
-  }
-  100% {
-    color: #143982;
-  }
-} */
 
 .component-title {
   margin-bottom: 2rem;
@@ -214,7 +204,7 @@
 .badge-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .tooltip-container {
