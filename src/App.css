@@ -4,6 +4,10 @@
 
 /* Typography and icons */
 
+.component-title {
+  margin-bottom: 2rem;
+}
+
 .upload-page-title {
   margin-top: 0;
 }
@@ -134,6 +138,18 @@
 }
 
 .component-container:not(:first-of-type) {
+  margin-top: 4.5rem;
+}
+
+.button-star-component-container,
+.menu-badge-component-container,
+.tooltip-toast-component-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-badge-component-container,
+.tooltip-toast-component-container {
   margin-top: 4.5rem;
 }
 
@@ -338,8 +354,8 @@
 .tooltip {
   display: flex;
   align-items: flex-start;
-  color: var(--tooltip-text-color);
-  background-color: var(--tooltip-background-color);
+  /* color: var(--tooltip-text-color);
+  background-color: var(--tooltip-background-color); */
   padding: 2rem;
   margin-top: 2rem;
   /* margin-top: 0.5rem; */ /* Reduced margin for better alignment */
@@ -553,26 +569,50 @@
 @media (min-width: 600px) {
   /* Typography and icons */
 
+  .component-title {
+    margin-bottom: 2.5rem;
+  }
 
   /* Layout */
 
   .app-container {
-    /* display: grid;
-    justify-content: flex-start;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 4.5rem;
-    row-gap: 4.5rem; */
     padding: 2.5rem 4.5rem 7.5rem;
   }
 
-  /* .component-container {
-    border: 1px solid cornflowerblue;
-    margin: 0;
-  } */
+  .component-container {
+    /* background-color: #E5E7EB; */
+    /* border: 1px solid cornflowerblue; */
+    border-radius: 0.75rem;
+    padding: 2.5rem;
+  }
 
   /* .component-container:not(:first-of-type) {
     margin-top: 0;
   } */
+
+  .button-star-component-container,
+  .menu-badge-component-container,
+  .tooltip-toast-component-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 4.5rem;
+    width: 70%;
+    margin-top: 4.5rem;
+  }
+
+  .button-star-component-container,
+  .tooltip-toast-component-container {
+    justify-content: space-around;
+  }
+
+  .button-star-component-container .component-container,
+  .menu-badge-component-container .component-container,
+  .tooltip-toast-component-container .component-container {
+    width: 100%;
+    margin-top: 0;
+  }
 
   .uploaded-file-container {
     width: 60%;

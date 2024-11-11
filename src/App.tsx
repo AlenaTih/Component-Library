@@ -40,81 +40,85 @@ function App() {
       {/* <h2 className="component-title">Upload page</h2>
       <UploadPage /> */}
 
-      <div className="component-container">
-        <h2 className="component-title">Button</h2>
-        <Button
-          className="do-this-button"
-          onClick={() => console.log("Button clicked")}
-        >
-          Click
-        </Button>
+      <div className="button-star-component-container">
+        <div className="component-container">
+          <h2 className="component-title">Button</h2>
+          <Button
+            className="do-this-button"
+            onClick={() => console.log("Button clicked")}
+          >
+            Click
+          </Button>
+        </div>
+
+        <div className="component-container">
+            <h2 className="component-title">Star</h2>
+            <Star onChange={(on: boolean) => {
+              console.log(`Star is ${on ? "on" : "off"}`)
+              }} />
+        </div>
       </div>
 
-      <div className="component-container">
-          <h2 className="component-title">Star</h2>
-          <Star onChange={(on: boolean) => {
-            console.log(`Star is ${on ? "on" : "off"}`)
-            }} />
-      </div>
+      <div className="menu-badge-component-container">
+        <div className="component-container">
+          <h2 className="component-title">Menu</h2>
+          <MenuNameSpace.Menu onOpen={handleMenuToggle}>
+            <MenuNameSpace.Button>
+              Toggle menu
+            </MenuNameSpace.Button>
+                    
+            <MenuNameSpace.Dropdown>
+              <MenuNameSpace.Item>
+                Item 1
+              </MenuNameSpace.Item>
+              <MenuNameSpace.Item>
+                Item 2
+              </MenuNameSpace.Item>
+              <MenuNameSpace.Item>
+                Item 3
+              </MenuNameSpace.Item>
+              <MenuNameSpace.Item>
+                Item 4
+              </MenuNameSpace.Item>
+            </MenuNameSpace.Dropdown>
+          </MenuNameSpace.Menu>
+        </div>
 
-      <div className="component-container">
-        <h2 className="component-title">Menu</h2>
-        <MenuNameSpace.Menu onOpen={handleMenuToggle}>
-          <MenuNameSpace.Button>
-            Toggle menu
-          </MenuNameSpace.Button>
-                  
-          <MenuNameSpace.Dropdown>
-            <MenuNameSpace.Item>
-              Item 1
-            </MenuNameSpace.Item>
-            <MenuNameSpace.Item>
-              Item 2
-            </MenuNameSpace.Item>
-            <MenuNameSpace.Item>
-              Item 3
-            </MenuNameSpace.Item>
-            <MenuNameSpace.Item>
-              Item 4
-            </MenuNameSpace.Item>
-          </MenuNameSpace.Dropdown>
-        </MenuNameSpace.Menu>
-      </div>
+        <div className="component-container">
+          <h2 className="component-title">Badge</h2>
+          <div className="badge-container">
+            <Badge color="yellow" shape="square">
+              Badge
+            </Badge>
 
-      <div className="component-container">
-        <h2 className="component-title">Badge</h2>
-        <div className="badge-container">
-          <Badge color="yellow" shape="square">
-            Badge
-          </Badge>
+            <Badge color="gray" shape="pill">
+              Badge
+            </Badge>
 
-          <Badge color="gray" shape="pill">
-            Badge
-          </Badge>
+            <Badge color="red" shape="square">
+              Badge
+            </Badge>
 
-          <Badge color="red" shape="square">
-            Badge
-          </Badge>
+            <Badge color="blue" shape="pill">
+              Badge
+            </Badge>
 
-          <Badge color="blue" shape="pill">
-            Badge
-          </Badge>
+            <Badge color="green" shape="square">
+              Badge
+            </Badge>
 
-          <Badge color="green" shape="square">
-            Badge
-          </Badge>
+            <Badge color="indigo" shape="pill">
+              Badge
+            </Badge>
 
-          <Badge color="indigo" shape="pill">
-            Badge
-          </Badge>
+            <Badge color="purple" shape="square">
+              Badge
+            </Badge>
 
-          <Badge color="purple" shape="square">
-            Badge
-          </Badge>
-
-          <Badge color="pink" shape="pill">
-            Badge
-          </Badge>
+            <Badge color="pink" shape="pill">
+              Badge
+            </Badge>
+          </div>
         </div>
       </div>
 
@@ -190,117 +194,119 @@ function App() {
         </div>
       </div>
 
-      <div className="component-container">
-        <h2 className="component-title tooltip-component-title">Tooltip</h2>
-        <div className="tooltip-container">
-          <Tooltip
-            title="Archive notes"
-            text="Click to archive your note."
-            color="gray"
-            mode="dark"
-          />
+      <div className="tooltip-toast-component-container">
+        <div className="component-container">
+          <h2 className="component-title">Tooltip</h2>
+          <div className="tooltip-container">
+            <Tooltip
+              title="Archive notes"
+              text="Click to archive your note."
+              color="gray"
+              mode="dark"
+            />
 
-          <Tooltip
-            title="Archive notes"
-            text="Click to archive your note."
-            color="blue"
-            mode="dark"
-          />
+            <Tooltip
+              title="Archive notes"
+              text="Click to archive your note."
+              color="blue"
+              mode="dark"
+            />
 
-          <Tooltip
-            title="Archive notes"
-            text="Click to archive your note."
-            color="pink"
-            mode="dark"
-          />
+            <Tooltip
+              title="Archive notes"
+              text="Click to archive your note."
+              color="pink"
+              mode="dark"
+            />
 
-          <Tooltip
-            title="Archive notes"
-            text="Click to archive your note."
-            color="green"
-            mode="dark"
-          />
+            <Tooltip
+              title="Archive notes"
+              text="Click to archive your note."
+              color="green"
+              mode="dark"
+            />
 
-          <Tooltip
-            title="Archive notes"
-            text="Click to archive your note."
-            color="gray"
-            mode="light"
-          />
+            <Tooltip
+              title="Archive notes"
+              text="Click to archive your note."
+              color="gray"
+              mode="light"
+            />
 
-          <Tooltip
-            title="Archive notes"
-            text="Click to archive your note."
-            color="blue"
-            mode="light"
-          />
+            <Tooltip
+              title="Archive notes"
+              text="Click to archive your note."
+              color="blue"
+              mode="light"
+            />
 
-          <Tooltip
-            title="Archive notes"
-            text="Click to archive your note."
-            color="pink"
-            mode="light"
-          />
+            <Tooltip
+              title="Archive notes"
+              text="Click to archive your note."
+              color="pink"
+              mode="light"
+            />
 
-          <Tooltip
-            title="Archive notes"
-            text="Click to archive your note."
-            color="green"
-            mode="light"
-          />
+            <Tooltip
+              title="Archive notes"
+              text="Click to archive your note."
+              color="green"
+              mode="light"
+            />
+          </div>
         </div>
-      </div>
 
-      <div className="component-container">
-        <h2 className="component-title">Toast</h2>
-        <div className="toast-container">
-          {isSuccessToastShown && createPortal(
-            <Toast
-              status="Success"
-              text="Your work has been saved"
-              onClose={() => setIsSuccessToastShown(false)}
-            />,
-            document.body
-          )}
+        <div className="component-container">
+          <h2 className="component-title">Toast</h2>
+          <div className="toast-container">
+            {isSuccessToastShown && createPortal(
+              <Toast
+                status="Success"
+                text="Your work has been saved"
+                onClose={() => setIsSuccessToastShown(false)}
+              />,
+              document.body
+            )}
 
-          {isWarningToastShown && createPortal(
-            <Toast
-              status="Warning"
-              text="A network error was detected"
-              onClose={() => setIsWarningToastShown(false)}
-            />,
-            document.body
-          )}
+            {isWarningToastShown && createPortal(
+              <Toast
+                status="Warning"
+                text="A network error was detected"
+                onClose={() => setIsWarningToastShown(false)}
+              />,
+              document.body
+            )}
 
-          {isErrorToastShown && createPortal(
-            <Toast
-              status="Error"
-              text="Please re-save your work again"
-              onClose={() => setIsErrorToastShown(false)}
-            />,
-            document.body
-          )}
+            {isErrorToastShown && createPortal(
+              <Toast
+                status="Error"
+                text="Please re-save your work again"
+                onClose={() => setIsErrorToastShown(false)}
+              />,
+              document.body
+            )}
 
-          {isInfoToastShown && createPortal(
-            <Toast
-              status="Information"
-              text="Please read updated information"
-              onClose={() => setIsInfoToastShown(false)}
-            />,
-            document.body
-          )}
+            {isInfoToastShown && createPortal(
+              <Toast
+                status="Information"
+                text="Please read updated information"
+                onClose={() => setIsInfoToastShown(false)}
+              />,
+              document.body
+            )}
 
-          <button
-            className="show-toast-button"
-            onClick={showToasts}
-            aria-label="Show toasts"
-            disabled={
-              isSuccessToastShown || isWarningToastShown ||
-              isErrorToastShown || isInfoToastShown
-            }
-          >
-              Show toasts
-          </button>
+            <button
+              className="show-toast-button"
+              onClick={showToasts}
+              aria-label="Show toasts"
+              disabled={
+                isSuccessToastShown || isWarningToastShown ||
+                isErrorToastShown || isInfoToastShown
+              }
+            >
+                Show toasts
+            </button>
+          </div>
         </div>
       </div>
 
