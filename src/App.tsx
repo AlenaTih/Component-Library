@@ -21,12 +21,17 @@ function App() {
   const [isWarningToastShown, setIsWarningToastShown] = useState(true)
   const [isErrorToastShown, setIsErrorToastShown] = useState(true)
   const [isInfoToastShown, setIsInfoToastShown] = useState(true)
+  const [isButtonToastShown, setIsButtonToastShown] = useState(false)
 
   function showToasts() {
     setIsSuccessToastShown(true)
     setIsWarningToastShown(true)
     setIsErrorToastShown(true)
     setIsInfoToastShown(true)
+  }
+
+  function showButtonToast() {
+    setIsButtonToastShown(true)
   }
 
   const handleMenuToggle = (open: boolean) => {
@@ -45,7 +50,8 @@ function App() {
           <h2 className="component-title">Button</h2>
           <Button
             className="do-this-button"
-            onClick={() => console.log("Button clicked")}
+            // onClick={() => console.log("Button clicked")}
+            onClick={showButtonToast}
           >
             Click
           </Button>
@@ -291,6 +297,15 @@ function App() {
                 status="Information"
                 text="Please read updated information"
                 onClose={() => setIsInfoToastShown(false)}
+              />,
+              document.body
+            )}
+
+            {isButtonToastShown && createPortal(
+              <Toast
+                status="Success"
+                text="Button clicked"
+                onClose={() => setIsButtonToastShown(false)}
               />,
               document.body
             )}
