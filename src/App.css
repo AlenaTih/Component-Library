@@ -621,6 +621,10 @@
     justify-content: space-around;
   }
 
+  .button-star-component-container {
+    margin-top: 2.5rem;
+  }
+
   .button-star-component-container .component-container,
   .menu-badge-component-container .component-container,
   .tooltip-toast-component-container .component-container {
