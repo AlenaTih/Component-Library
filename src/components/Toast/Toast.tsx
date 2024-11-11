@@ -28,7 +28,7 @@ function Toast({
     let icon
     let className
 
-    // Title, text, background color, and icon based on the status
+    // Title, text, background color, icon, and className based on the status
     if (status === "Success") {
         titleColor = "#065F46"
         textColor = "#047857"

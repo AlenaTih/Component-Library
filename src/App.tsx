@@ -17,10 +17,10 @@ import Toast from "./components/Toast/Toast.tsx"
 import "./App.css"
 
 function App() {
-  const [isSuccessToastShown, setIsSuccessToastShown] = useState(true)
-  const [isWarningToastShown, setIsWarningToastShown] = useState(true)
-  const [isErrorToastShown, setIsErrorToastShown] = useState(true)
-  const [isInfoToastShown, setIsInfoToastShown] = useState(true)
+  const [isSuccessToastShown, setIsSuccessToastShown] = useState(false)
+  const [isWarningToastShown, setIsWarningToastShown] = useState(false)
+  const [isErrorToastShown, setIsErrorToastShown] = useState(false)
+  const [isInfoToastShown, setIsInfoToastShown] = useState(false)
   const [isButtonToastShown, setIsButtonToastShown] = useState(false)
 
   function showToasts() {
@@ -34,9 +34,9 @@ function App() {
     setIsButtonToastShown(true)
   }
 
-  const handleMenuToggle = (open: boolean) => {
-    console.log(`Menu is ${open ? "open" : "closed"}`)
-  }
+  // const handleMenuToggle = (open: boolean) => {
+  //   console.log(`Menu is ${open ? "open" : "closed"}`)
+  // }
   
   return (
     <div className="app-container">
@@ -59,16 +59,18 @@ function App() {
 
         <div className="component-container">
             <h2 className="component-title">Star</h2>
-            <Star onChange={(on: boolean) => {
+            {/* <Star onChange={(on: boolean) => {
               console.log(`Star is ${on ? "on" : "off"}`)
-              }} />
+              }} /> */}
+              <Star />
         </div>
       </div>
 
       <div className="menu-badge-component-container">
         <div className="component-container">
           <h2 className="component-title">Menu</h2>
-          <MenuNameSpace.Menu onOpen={handleMenuToggle}>
+          {/* <MenuNameSpace.Menu onOpen={handleMenuToggle}> */}
+          <MenuNameSpace.Menu>
             <MenuNameSpace.Button>
               Toggle menu
             </MenuNameSpace.Button>

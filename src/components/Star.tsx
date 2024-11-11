@@ -3,7 +3,7 @@ import useToggle from "../hooks/useToggle.tsx"
 
 export default function Star({
     onChange
-}: { onChange: (state: boolean) => void }) {
+}: { onChange?: (state: boolean) => void }) {
     const [on, toggle] = useToggle({
         initialValue: false, 
         onToggle: onChange
