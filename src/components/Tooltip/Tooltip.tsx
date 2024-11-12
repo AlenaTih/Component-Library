@@ -106,7 +106,7 @@ function Tooltip({
             onMouseEnter={() => setIsVisible(true)}
             onMouseLeave={() => setIsVisible(false)}
             onTouchStart={() => setIsVisible(true)}
-            // onTouchEnd={() => setIsVisible(false)}
+            onTouchEnd={() => setIsVisible(false)}
             // onClick={toggleVisibility}
         >
             <button className="open-tooltip-button">
