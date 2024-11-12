@@ -2,13 +2,12 @@
 
 ## Overview
 
-A library of awesome components.
+A library of reusable components built with React and TypeScript.
 
 ## Features
 
 Components included:
 
-- **Feature:** description.
 - **Button**
 - **Star**
 - **Menu**
@@ -19,9 +18,9 @@ Components included:
 - **Tooltip**
 - **Toast**
 
-## Usage
+<!-- ## Usage
 
-1. Usage.
+1. Usage. -->
 
 ## Technologies Used
 
@@ -32,14 +31,6 @@ Components included:
 - JavaScript
 - TypeScript
 - React Icons (Bootstrap Icons)
-
-## API
-
-This project uses the [API](link) to fetch data.
-
-## Database
-
-Data is stored in the Appwrite Database.
 
 ## Contributors
 
