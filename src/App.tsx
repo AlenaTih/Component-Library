@@ -1,6 +1,5 @@
 import { useState} from "react"
 import { createPortal } from "react-dom"
-// import UploadPage from "./components/UploadPage.tsx"
 import Button from "./components/Button/Button.tsx"
 import Star from "./components/Star.tsx"
 import MenuNameSpace from "./components/Menu/MenuNameSpace.tsx"
@@ -33,24 +32,16 @@ function App() {
   function showButtonToast() {
     setIsButtonToastShown(true)
   }
-
-  // const handleMenuToggle = (open: boolean) => {
-  //   console.log(`Menu is ${open ? "open" : "closed"}`)
-  // }
   
   return (
     <div className="app-container">
       <h1 className="app-title">React Components</h1>
-
-      {/* <h2 className="component-title">Upload page</h2>
-      <UploadPage /> */}
 
       <div className="button-star-component-container">
         <div className="component-container">
           <h2 className="component-title">Button</h2>
           <Button
             className="do-this-button"
-            // onClick={() => console.log("Button clicked")}
             onClick={showButtonToast}
           >
             Click
@@ -59,9 +50,6 @@ function App() {
 
         <div className="component-container">
             <h2 className="component-title">Star</h2>
-            {/* <Star onChange={(on: boolean) => {
-              console.log(`Star is ${on ? "on" : "off"}`)
-              }} /> */}
               <Star />
         </div>
       </div>
@@ -69,7 +57,6 @@ function App() {
       <div className="menu-badge-component-container">
         <div className="component-container">
           <h2 className="component-title">Menu</h2>
-          {/* <MenuNameSpace.Menu onOpen={handleMenuToggle}> */}
           <MenuNameSpace.Menu>
             <MenuNameSpace.Button>
               Toggle menu

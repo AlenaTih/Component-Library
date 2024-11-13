@@ -1,5 +1,4 @@
 import { useState } from "react"
-// import { createPortal } from "react-dom"
 import { BsBookmark, BsX } from "react-icons/bs"
 
 function Tooltip({
@@ -16,10 +15,6 @@ function Tooltip({
     // children: React.ReactNode,
 }) {
     const [isVisible, setIsVisible] = useState(false)
-
-    // function toggleVisibility() {
-    //     setIsVisible((prev: boolean) => !prev)
-    // }
 
     let titleColor
     let textColor
@@ -107,7 +102,6 @@ function Tooltip({
             onMouseLeave={() => setIsVisible(false)}
             onTouchStart={() => setIsVisible(true)}
             onTouchEnd={() => setIsVisible(false)}
-            // onClick={toggleVisibility}
         >
             <button className="open-tooltip-button">
                 <BsBookmark style={iconStyle} />
